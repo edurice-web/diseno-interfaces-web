@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Supermercado Online</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Ir a inicio">
+        <span class="brand__logo">🛒</span>
+        <span class="brand__name">Supermercado Online</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#categorias">Categorías</a>
+        <a href="#destacados">Destacados</a>
+        <a href="#productos">Productos</a>
+        <a class="nav__cart" href="#carrito" aria-label="Ir al carrito">Carrito</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-label="Promoción principal">
+      <div class="hero__text">
+        <h1>Compra fácil, rápida y desde cualquier dispositivo</h1>
+        <p>Explora categorías y encuentra productos recomendados.</p>
+        <a class="btn" href="#destacados">Ver destacados</a>
+      </div>
+
+      <a class="hero__card hero__link" href="producto1.html" aria-label="Ver oferta semanal: Manzana Golden (1 kg)">
+        <div class="media media--hero">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Delicious_apples.jpg/1024px-Golden_Delicious_apples.jpg"
+            alt="Oferta semanal: Manzana Golden"
+            loading="lazy"
+          />
+        </div>
+        <div class="hero__badge">Oferta semanal · Manzana Golden (1 kg)</div>
+      </a>
+    </section>
+
+    <section id="categorias" class="section">
+      <h2>Categorías</h2>
+      <div class="categories">
+        <a class="chip" href="#productos">Frutas</a>
+        <a class="chip" href="#productos">Bebidas</a>
+        <a class="chip" href="#productos">Limpieza</a>
+        <a class="chip" href="#productos">Despensa</a>
+      </div>
+    </section>
+
+    <section id="destacados" class="section">
+      <div class="section__header">
+        <h2>Productos destacados</h2>
+        <p class="muted">Productos recomendados con su página de detalle.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card__media" aria-label="Imagen del producto destacado 1">
+            <div class="media media--card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Delicious_apples.jpg/1024px-Golden_Delicious_apples.jpg"
+                alt="Manzana Golden"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="card__body">
+            <h3 class="card__title">Manzana Golden (1 kg)</h3>
+            <p class="muted">Fruta fresca ideal para snacks y desayunos.</p>
+
+            <div class="card__meta">
+              <span class="price">2,49 €</span>
+              <span class="stock in">En stock</span>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn btn--ghost" href="producto1.html">Ver detalle</a>
+              <button class="btn" type="button">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media" aria-label="Imagen del producto destacado 2">
+            <div class="media media--card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Plastic_soap_bottle.jpg/1280px-Plastic_soap_bottle.jpg"
+                alt="Detergente líquido"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="card__body">
+            <h3 class="card__title">Detergente líquido (2 L)</h3>
+            <p class="muted">Limpieza eficaz con aroma suave para el hogar.</p>
+
+            <div class="card__meta">
+              <span class="price">4,95 €</span>
+              <span class="stock low">Pocas unidades</span>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn btn--ghost" href="producto2.html">Ver detalle</a>
+              <button class="btn" type="button">Añadir</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="productos" class="section">
+      <div class="section__header">
+        <h2>Productos</h2>
+        <p class="muted">Listado organizado.</p>
+      </div>
+
+      <div class="products">
+        <article class="product">
+          <div class="product__media" aria-label="Imagen de plátanos">
+            <div class="media media--product">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/71/A_bunch_of_bananas.jpg"
+                alt="Plátanos"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="product__body">
+            <h3>Plátano de Canarias (1 kg)</h3>
+            <p class="muted">Categoría: Frutas</p>
+            <div class="product__row">
+              <span class="price">2,10 €</span>
+              <button class="btn btn--sm" type="button">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product__media" aria-label="Imagen de manzana">
+            <div class="media media--product">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Delicious_apples.jpg/1024px-Golden_Delicious_apples.jpg"
+                alt="Manzana"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="product__body">
+            <h3>Manzana (unidad)</h3>
+            <p class="muted">Categoría: Frutas</p>
+            <div class="product__row">
+              <span class="price">0,45 €</span>
+              <button class="btn btn--sm" type="button">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product__media" aria-label="Imagen de agua mineral">
+            <div class="media media--product">
+              <img
+                src="img/agua.jpg"
+                alt="Agua mineral"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="product__body">
+            <h3>Agua mineral (1,5 L)</h3>
+            <p class="muted">Categoría: Bebidas</p>
+            <div class="product__row">
+              <span class="price">0,69 €</span>
+              <button class="btn btn--sm" type="button">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product__media" aria-label="Imagen de detergente">
+            <div class="media media--product">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Plastic_soap_bottle.jpg/1280px-Plastic_soap_bottle.jpg"
+                alt="Producto de limpieza"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="product__body">
+            <h3>Lavavajillas (750 ml)</h3>
+            <p class="muted">Categoría: Limpieza</p>
+            <div class="product__row">
+              <span class="price">1,85 €</span>
+              <button class="btn btn--sm" type="button">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product__media" aria-label="Imagen de pack de agua">
+            <div class="media media--product">
+              <img
+                src="img/agua.jpg"
+                alt="Pack de agua"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="product__body">
+            <h3>Agua mineral (pack)</h3>
+            <p class="muted">Categoría: Bebidas</p>
+            <div class="product__row">
+              <span class="price">2,99 €</span>
+              <button class="btn btn--sm" type="button">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product__media" aria-label="Imagen de pasta">
+            <div class="media media--product">
+              <img
+                src="img/pasta.jpg"
+                alt="Pasta"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="product__body">
+            <h3>Pasta (500 g)</h3>
+            <p class="muted">Categoría: Despensa</p>
+            <div class="product__row">
+              <span class="price">1,20 €</span>
+              <button class="btn btn--sm" type="button">Añadir</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Contacto</strong>
+        <p class="muted">Tel: 900 000 000 · Email: contacto@supermercado.com</p>
+      </div>
+      <div>
+        <strong>Redes</strong>
+        <p class="muted">Instagram · X · Facebook</p>
+      </div>
+      <div>
+        <strong>Aviso legal</strong>
+        <p class="muted">Política de privacidad · Cookies</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
